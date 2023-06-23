@@ -8,7 +8,7 @@ import { API_URL } from '../constants/apiUrls';
 
 export const Users = () => {
   const users = useFetch(`${API_URL}/users`);
-
+  
   return (
     <div className="d-flex justify-content-around flex-wrap">
       {users.map(user => (
